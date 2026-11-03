@@ -435,6 +435,15 @@ function sendJson(res, status, payload) {
 
 export const name = NS;
 
+/**
+ * Wait for the HTTP carrier before applying.
+ *
+ * Without this the bundle can be applied before `webServer` exists (cold start
+ * ordering), the route never gets registered, and the client half sits on a 404
+ * until someone reloads the plugin by hand.
+ */
+export const inject = ['webServer'];
+
 export function apply(ctx) {
   const webServer = (typeof ctx.get === 'function' && ctx.get('webServer')) || ctx.webServer;
   if (!webServer || typeof webServer.register !== 'function') {

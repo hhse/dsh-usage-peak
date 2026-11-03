@@ -220,6 +220,15 @@ window.__ModuleLoader__.load({
         return () => clearInterval(timer);
       }, [load]);
 
+      // A failed start (the host half may register its route a moment after the
+      // page boots) should not leave the widget stuck on "读取失败" for a minute.
+      const failing = !!state.error;
+      useEffect(() => {
+        if (!failing) return undefined;
+        const timer = setTimeout(() => load(false), 5_000);
+        return () => clearTimeout(timer);
+      }, [failing, load, state.error]);
+
       useEffect(() => {
         const timer = setInterval(() => setTick((value) => value + 1), 15_000);
         return () => clearInterval(timer);
