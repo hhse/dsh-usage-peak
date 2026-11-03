@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Usage Dashboard",
+    "description": "Peak/valley pricing windows plus daily spend, requests and cache hits, rebuilt from this machine's session logs."
+  }
+}

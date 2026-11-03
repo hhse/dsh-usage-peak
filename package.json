@@ -1,0 +1,53 @@
+{
+  "name": "dsh-usage-peak",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "DeepSeek Harness 用量峰谷仪表盘：峰/谷时段、今日花费与 tokens、24h 与 14 天趋势、缓存命中与花费构成，侧栏常驻胶囊 + 设置页详情。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.3": "compatible"
+      }
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "usage",
+    "tokens",
+    "cost",
+    "deepseek-api",
+    "peak-pricing",
+    "cordis",
+    "react"
+  ]
+}

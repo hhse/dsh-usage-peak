@@ -1,0 +1,10 @@
+# 提交到 awesome-dsh-plugin（DSH 插件市场的目录来源）用的条目文件。
+# 用法：把 hhse/dsh-usage-peak 换成你的 GitHub 仓库，然后以
+#   data/plugins/hhse__dsh-usage-peak.yml
+# 的路径提交到 https://github.com/awesome-dsh-plugin/awesome-dsh-plugin 的 PR。
+url: https://github.com/hhse/dsh-usage-peak
+name: hhse/dsh-usage-peak
+category: usage
+description:
+  en: 'Peak/valley pricing and spend dashboard for DeepSeek Harness: a sidebar pill plus a details page.'
+  zh: 'DeepSeek Harness 用量峰谷仪表盘：侧栏胶囊常显示峰谷、今日花费与 tokens，设置页看 24 小时与 14 天趋势。'
