@@ -4,6 +4,12 @@
 
 全部在本地读取 DSH 自己的会话日志，不联网、不上报。
 
+## 效果
+
+侧栏常驻一行：峰/谷、今日花费、tokens、距离下次切价的时间，一眼看完。
+
+![侧栏胶囊：谷时 ¥17.10 · 170.3M tok · 13:56 后转峰](assets/sidebar-pill.webp)
+
 ## 功能
 
 - **侧栏常驻胶囊**：`● 峰  ¥14.70 · 12.8M tok · 2:43 后转谷`，点一下打开完整面板。侧栏折叠时收成一个小圆点。
@@ -70,6 +76,8 @@ MIT
 ## English
 
 A usage and cost dashboard for DeepSeek Harness. It reads the local session logs (`session.v4.jsonl.zstd`) and the whale ledger, then shows:
+
+![Sidebar pill: valley ¥17.10 · 170.3M tok · switching to peak in 13:56](assets/sidebar-pill.webp)
 
 - a persistent sidebar pill with peak/valley state, today's spend, tokens and the countdown to the next price switch;
 - a details page (Settings → Usage dashboard) with KPIs, an hourly breakdown, cost composition, a 14-day trend, a per-model table and the price list.
