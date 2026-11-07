@@ -17,7 +17,8 @@
     "icon.svg",
     "README.md",
     "LICENSE",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "assets/*.webp"
   ],
   "dsh": {
     "bundle": {
@@ -49,5 +50,18 @@
     "peak-pricing",
     "cordis",
     "react"
-  ]
+  ],
+  "private": false,
+  "author": "mumuhmumu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhse/dsh-usage-peak.git"
+  },
+  "homepage": "https://github.com/hhse/dsh-usage-peak#readme",
+  "bugs": {
+    "url": "https://github.com/hhse/dsh-usage-peak/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

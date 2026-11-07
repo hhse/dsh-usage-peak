@@ -46,10 +46,10 @@
 ## 安装
 
 ```sh
-dsh plugin add github:hhse/dsh-usage-peak
+dsh plugin add dsh-usage-peak
 ```
 
-（npm 同名包发布后，也可以直接按名字安装。）
+也可以在 DSH 插件市场搜索 `dsh-usage-peak` 安装。
 
 装好后：
 
